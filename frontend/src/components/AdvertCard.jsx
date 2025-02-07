@@ -70,7 +70,7 @@ const AdvertCard = ({ advert }) => {
 		} else {
 			toast({
 				title: "Success",
-				description: "Product updated successfully",
+				description: "Advert updated successfully",
 				status: "success",
 				duration: 3000,
 				isClosable: true,

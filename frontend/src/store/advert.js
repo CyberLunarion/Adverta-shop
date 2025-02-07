@@ -49,6 +49,9 @@ export const useAdvertStore = create((set) => ({
 		return { success: true, message: data.message };
 	},
 	updateAdvert: async (pid, updatedAdvert) => {
+		if (!updatedAdvert.name || !updatedAdvert.image || !updatedAdvert.price || !updatedAdvert.category) {
+			return { success: false, message: "Please fill in all fields." };
+		}
 		const res = await fetch(`/api/adverts/${pid}`, {
 			method: "PUT",
 			headers: {

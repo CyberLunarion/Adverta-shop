@@ -14,10 +14,10 @@ function App() {
 			<Navbar />
 			<Routes>
 				<Route path='/' element={<HomePage />} />
-				<Route path='/search' element={<SearchPage />}/>
+				<Route path='/search' element={<SearchPage />} />
 				<Route path='/create' element={<CreatePage />} />
-				<Route path='/register' element={<RegisterPage/>}/>
-				<Route path='/login' element={<LoginPage/>}/>
+				<Route path='/register' element={<RegisterPage />} />
+				<Route path='/login' element={<LoginPage />} />
 			</Routes>
 		</Box>
 	);
